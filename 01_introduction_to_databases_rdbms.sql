@@ -1,0 +1,16 @@
+SHOW DATABASES;
+
+CREATE DATABASE IF NOT EXISTS intro_db;
+USE intro_db;
+
+CREATE TABLE IF NOT EXISTS users (
+    id    INT PRIMARY KEY AUTO_INCREMENT,
+    name  VARCHAR(50),
+    email VARCHAR(100)
+);
+
+SHOW TABLES;
+
+DESCRIBE users;
+
+DROP DATABASE intro_db;
